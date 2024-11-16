@@ -125,8 +125,6 @@ namespace DataFac.Memory.Tests
             var b = Octets.Empty;
 
             AssertAreEquivalent(s, b);
-
-            b.GetHashCode().Should().Be(0);
         }
 
         [Fact]
@@ -136,8 +134,6 @@ namespace DataFac.Memory.Tests
             var b = new Octets(Encoding.UTF8.GetBytes(s));
 
             AssertAreEquivalent(s, b);
-
-            b.GetHashCode().Should().Be(192635423);
         }
 
         [Fact]

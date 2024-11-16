@@ -169,18 +169,20 @@ namespace DataFac.Memory
 
         private int CalcHashCode()
         {
+            var result = new HashCode();
             var span = _memory.Span;
-            int thisLen = span.Length;
-            unchecked
+            result.Add(span.Length);
+#if NET6_0_OR_GREATER
+            result.AddBytes(span);
+#else
+            for (int i = 0; i < span.Length; i++)
             {
-                int result = thisLen;
-                for (int i = 0; i < thisLen; i++)
-                {
-                    result = (result * 397) ^ span[i];
-                }
-                return result;
+                result.Add(span[i]);
             }
+#endif
+            return result.ToHashCode();
         }
+
         public override int GetHashCode()
         {
             return _hashCodeFunc.Value;
@@ -202,7 +204,7 @@ namespace DataFac.Memory
             return thatSpan.SequenceEqual(thisSpan);
         }
 
-        #endregion
+#endregion
 
     }
 }
