@@ -1,2 +1,8 @@
-# datafac-memory
-Performant memory related types and codecs
+# Datafac.Memory
+Performant memory related types and codecs.
+
+## Octets
+An immutable reference type that wraps a ReadOnlyMemory\<byte\> buffer.
+
+## Codecs
+
