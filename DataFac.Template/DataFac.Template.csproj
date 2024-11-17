@@ -7,13 +7,13 @@
 		<WarningsAsErrors>nullable</WarningsAsErrors>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
-		<PackageProjectUrl>https://github.com/datafac/memory</PackageProjectUrl>
-		<RepositoryUrl>https://github.com/datafac/memory</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/datafac/template</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/datafac/template</RepositoryUrl>
 		<Company>DataFac</Company>
-		<Product>Memory</Product>
+		<Product>Template</Product>
 		<Authors>DataFac Contributors</Authors>
-		<Title>DataFac Memory</Title>
-		<Description>Performant memory related types and codecs.</Description>
+		<Title>DataFac Template</Title>
+		<Description>Template for single package repos.</Description>
 		<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
 		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
 		<IncludeSymbols>true</IncludeSymbols>
@@ -36,7 +36,6 @@
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
-		<PackageReference Include="System.Memory" Version="4.6.0" />
 	</ItemGroup>
 
 </Project>

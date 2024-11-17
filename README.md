@@ -1,11 +1,19 @@
-[![Build-Deploy](https://github.com/datafac/memory/actions/workflows/dotnet.yml/badge.svg)](https://github.com/datafac/memory/actions/workflows/dotnet.yml)
+# Datafac.Template
+A template repo for quickly creating single package repos.
 
-# Datafac.Memory
-Performant memory related types and codecs.
+## In-the-box
+- Visual Studio centric .gitignore
+- Github workflow to build, test and deploy to Nuget
+- NerdBank.Gitversioning
+- package targets netstandard2.0, net6.0, net7.0, net8.0, net9.0
+- XUnit test project using FluentAssertions
+- tests target net481, net6.0, net7.0, net8.0, net9.0
 
-## Octets
-An immutable reference type that wraps a ReadOnlyMemory\<byte\> buffer.
-
-## Codecs
-
-## Blocks
+## How to use
+1. Clone this repo.
+2. Globally rename 'datafac' to your organisation name.
+3. Globally rename 'template' to your new package name.
+	- don't forget project folders!
+4. Update version.json
+4. Make sure your Nuget API key is not expired and the
+   saved as a Github secret named NUGET_APIKEY.
