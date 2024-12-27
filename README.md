@@ -5,7 +5,7 @@ A template repo for quickly creating .NET packages.
 - Visual Studio centric .gitignore
 - Github workflow to build, test and deploy to Nuget
 - NerdBank.Gitversioning
-- package targets netstandard2.0, net6.0, net7.0, net8.0, net9.0
+- package targets netstandard2.0, net8.0, net9.0
 - includes publishing symbols (snupkg)
 - XUnit test project using FluentAssertions and VerifyXUnit
 - tests target net481, net6.0, net7.0, net8.0, net9.0
