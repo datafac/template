@@ -1,4 +1,4 @@
-﻿using FluentAssertions;
+﻿using Shouldly;
 using PublicApiGenerator;
 using System.Threading.Tasks;
 using VerifyXunit;
@@ -11,7 +11,7 @@ namespace DataFac.Template.Tests
         [Fact]
         public void VersionCheck()
         {
-            ThisAssembly.AssemblyVersion.Should().Be("0.2.0.0");
+            ThisAssembly.AssemblyVersion.ShouldBe("0.2.0.0");
         }
 
         [Fact]

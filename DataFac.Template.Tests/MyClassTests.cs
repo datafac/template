@@ -1,4 +1,4 @@
-using FluentAssertions;
+using Shouldly;
 using Xunit;
 
 namespace DataFac.Template.Tests
@@ -15,7 +15,7 @@ namespace DataFac.Template.Tests
             var result = myClass.GetGreeting("World");
 
             // assert
-            result.Should().Be("Hello, World!");
+            result.ShouldBe("Hello, World!");
         }
     }
 }
