@@ -6,6 +6,7 @@ and publishes to NuGet.
 [![Build-Deploy](https://github.com/datafac/template/actions/workflows/dotnet.yml/badge.svg)](https://github.com/datafac/template/actions/workflows/dotnet.yml)
 ![NuGet Version](https://img.shields.io/nuget/v/Datafac.Template)
 ![NuGet Downloads](https://img.shields.io/nuget/dt/Datafac.Template)
+![GitHub License](https://img.shields.io/github/license/Datafac/Template)
 
 ## In-the-box
 - Visual Studio centric .gitignore
