@@ -1,14 +1,17 @@
-[![Build-Deploy](https://github.com/datafac/template/actions/workflows/dotnet.yml/badge.svg)](https://github.com/datafac/template/actions/workflows/dotnet.yml)
 
 # Datafac.Template
 A template repo for quickly creating a C# .NET package which builds on GitHub 
 and publishes to NuGet.
 
+[![Build-Deploy](https://github.com/datafac/template/actions/workflows/dotnet.yml/badge.svg)](https://github.com/datafac/template/actions/workflows/dotnet.yml)
+![NuGet Version](https://img.shields.io/nuget/v/Datafac.Template)
+![NuGet Downloads](https://img.shields.io/nuget/dt/Datafac.Template)
+
 ## In-the-box
 - Visual Studio centric .gitignore
 - Github workflow to build, test and deploy to Nuget
 - NerdBank.GitVersioning
-- build status badge
+- build status and other badges
 - package targets netstandard2.0, net8.0, net9.0
 - includes publishing symbols (snupkg)
 - XUnit test project using Shoudly, VerifyXUnit and PublicApiGenerator
