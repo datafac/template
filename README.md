@@ -5,8 +5,10 @@ and publishes to NuGet.
 
 [![Build-Deploy](https://github.com/datafac/template/actions/workflows/dotnet.yml/badge.svg)](https://github.com/datafac/template/actions/workflows/dotnet.yml)
 ![NuGet Version](https://img.shields.io/nuget/v/Datafac.Template)
-![NuGet Downloads](https://img.shields.io/nuget/dt/Datafac.Template)
 ![GitHub License](https://img.shields.io/github/license/Datafac/Template)
+![NuGet Downloads](https://img.shields.io/nuget/dt/Datafac.Template)
+![GitHub Sponsors](https://img.shields.io/github/sponsors/psiman62)
+
 
 ## In-the-box
 - Visual Studio centric .gitignore
@@ -33,3 +35,8 @@ and publishes to NuGet.
 8. Make sure your Nuget API key is not expired and the
    saved as a Github secret named NUGET_APIKEY.
 9. Push!
+
+## How to sponsor
+If you find this template useful, please consider sponsoring my work on GitHub 
+at https://github.com/sponsors/Psiman62
+or buy me a coffee at https://www.buymeacoffee.com/psiman62
