@@ -14,6 +14,7 @@ and publishes to NuGet.
 - Visual Studio centric .gitignore
 - Github workflow to build, test and deploy to Nuget
 - NerdBank.GitVersioning
+- strong naming
 - build status and other badges
 - package targets netstandard2.0, net8.0, net9.0
 - includes publishing symbols (snupkg)
@@ -31,10 +32,11 @@ and publishes to NuGet.
 4. Rename MyClass.cs to match your first class name.
 5. Rename MyClassTests.cs to match your first test class name.
 6. Update version.json and readme.md
-7. Update the license properties in the .csproj file.
-8. Make sure your Nuget API key is not expired and the
+7. Generate and update SigningKey.snk
+8. Update the license properties in the .csproj file.
+9. Make sure your Nuget API key is not expired and the
    saved as a Github secret named NUGET_APIKEY.
-9. Push!
+10. Commit and push!
 
 ## How to sponsor
 If you find this template useful, please consider sponsoring my work on GitHub 
