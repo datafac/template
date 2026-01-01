@@ -24,19 +24,23 @@ and publishes to NuGet.
 ## How to use
 1. Create a new repo by importing this repo.
 2. Rename the solution and project files to your new package name.
-   - e.g. Datafac.Template.sln to MyCompany.MyPackage.sln
-   - e.g. Datafac.Template.csproj to MyCompany.MyPackage.csproj
-   - e.g. Datafac.Template.Tests.csproj to MyCompany.MyPackage.Tests.csproj
+   - e.g. Datafac.Template.sln to MyOrgName.MyPackage.sln
+   - e.g. Datafac.Template.csproj to MyOrgName.MyPackage.csproj
+   - e.g. Datafac.Template.Tests.csproj to MyOrgName.MyPackage.Tests.csproj
 3. Globally rename the namespace 'Datafac.Template' to your new package name.
-   - e.g. Datafac.Template to MyCompany.MyPackage
+   - e.g. Datafac.Template to MyOrgName.MyPackage
 4. Rename MyClass.cs to match your first class name.
 5. Rename MyClassTests.cs to match your first test class name.
 6. Update version.json and readme.md
 7. Generate and update SigningKey.snk
 8. Update the license properties in the .csproj file.
-9. Make sure your Nuget API key is not expired and the
+9. Make sure your Nuget API key is not expired and is
    saved as a Github secret named NUGET_APIKEY.
 10. Commit and push!
+
+## Coming soon
+- Sample Benchmarking project using BenchmarkDotNet.
+- Sample data modelling project using DTOMaker.
 
 ## How to sponsor
 If you find this template useful, please consider sponsoring my work on GitHub 

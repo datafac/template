@@ -11,7 +11,7 @@ namespace DataFac.Template.Tests
         [Fact]
         public void VersionCheck()
         {
-            ThisAssembly.AssemblyVersion.ShouldBe("0.3.0.0");
+            typeof(MyClass).Assembly.GetName().Version?.ToString().ShouldBe("0.3.0.0");
         }
 
         [Fact]
