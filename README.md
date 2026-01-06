@@ -19,24 +19,23 @@ and publishes to NuGet.
 - package targets netstandard2.0, net8.0, net9.0, net10.0
 - includes publishing symbols (snupkg)
 - XUnit test project using Shoudly, VerifyXUnit and PublicApiGenerator
-- unit tests target net481, net8.0, net9.0
+- unit tests target net481, net8.0, net9.0, net10.0
 
 ## How to use
 1. Create a new repo by importing this repo.
-2. Rename the solution and project files to your new package name.
-   - e.g. Datafac.Template.sln to MyOrgName.MyPackage.sln
-   - e.g. Datafac.Template.csproj to MyOrgName.MyPackage.csproj
-   - e.g. Datafac.Template.Tests.csproj to MyOrgName.MyPackage.Tests.csproj
-3. Globally rename the namespace 'Datafac.Template' to your new package name.
-   - e.g. Datafac.Template to MyOrgName.MyPackage
+2. Globally rename "DataFac" to your organisation name in *all* files.
+   - e.g. Datafac to MyOrgName
+3. Globally rename "Template" to your new package name in *all* files.
+   - e.g. Template.sln to MyPackage
 4. Rename MyClass.cs to match your first class name.
 5. Rename MyClassTests.cs to match your first test class name.
 6. Update version.json and readme.md
 7. Generate and update SigningKey.snk
 8. Update the license properties in the .csproj file.
 9. Make sure your Nuget API key is not expired and is
-   saved as a Github secret named NUGET_APIKEY.
-10. Commit and push!
+   saved as a Github secret named NUGET_APIKEY in your
+   GitHub organisation or repository.
+10. Build, test, commit and push!
 
 ## Coming soon
 - Sample Benchmarking project using BenchmarkDotNet.
