@@ -13,12 +13,12 @@
 		<Product>Template</Product>
 		<Authors>DataFac Contributors</Authors>
 		<Title>DataFac Template</Title>
-		<Description>Template for single package repos.</Description>
+		<Description>Template for single .NET package repos.</Description>
 		<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
 		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
 		<EnableNETAnalyzers>True</EnableNETAnalyzers>
 		<SignAssembly>true</SignAssembly>
-		<AssemblyOriginatorKeyFile>..\SigningKey.snk</AssemblyOriginatorKeyFile>
+		<AssemblyOriginatorKeyFile>..\..\SigningKey.snk</AssemblyOriginatorKeyFile>
 		<IncludeSource>true</IncludeSource>
 		<EmbedUntrackedSources>true</EmbedUntrackedSources>
 		<PublishRepositoryUrl>true</PublishRepositoryUrl>
@@ -29,7 +29,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<None Include="..\README.md">
+		<None Include="..\..\README.md">
 			<Pack>True</Pack>
 			<PackagePath>\</PackagePath>
 		</None>
