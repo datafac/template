@@ -31,7 +31,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\..\src\DataFac.Template\DataFac.Template.csproj" />
+	  <ProjectReference Include="..\DataFac.Template\DataFac.Template.csproj" />
 	</ItemGroup>
 
 </Project>
