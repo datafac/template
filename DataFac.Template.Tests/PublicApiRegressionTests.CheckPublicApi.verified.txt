@@ -1,8 +1,9 @@
 ﻿namespace DataFac.Template
 {
-    public sealed class MyClass
+    public sealed class MyClass1 : System.IDisposable
     {
-        public MyClass() { }
-        public string GetGreeting(string name) { }
+        public MyClass1(string myName) { }
+        public void Dispose() { }
+        public string GetGreeting(string yourName) { }
     }
 }

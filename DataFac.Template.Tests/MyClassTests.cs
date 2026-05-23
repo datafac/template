@@ -9,13 +9,13 @@ namespace DataFac.Template.Tests
         public void Test1()
         {
             // arrange
-            MyClass myClass = new MyClass();
+            using var myClass = new MyClass1("Alice");
 
             // act
-            var result = myClass.GetGreeting("World");
+            var result = myClass.GetGreeting("Bob");
 
             // assert
-            result.ShouldBe("Hello, World!");
+            result.ShouldBe("Hello Bob, my name is Alice.");
         }
     }
 }

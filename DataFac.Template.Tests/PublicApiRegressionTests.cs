@@ -11,7 +11,7 @@ namespace DataFac.Template.Tests
         [Fact]
         public void VersionCheck()
         {
-            typeof(MyClass).Assembly.GetName().Version?.ToString().ShouldBe("0.3.0.0");
+            typeof(MyClass1).Assembly.GetName().Version?.ToString().ShouldBe("0.3.0.0");
         }
 
         [Fact]
@@ -22,7 +22,7 @@ namespace DataFac.Template.Tests
             {
                 IncludeAssemblyAttributes = false
             };
-            string currentApi = ApiGenerator.GeneratePublicApi(typeof(MyClass).Assembly, options);
+            string currentApi = ApiGenerator.GeneratePublicApi(typeof(MyClass1).Assembly, options);
 
             // assert
             await Verifier.Verify(currentApi);

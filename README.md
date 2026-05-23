@@ -27,7 +27,7 @@ and publishes to NuGet.
    - e.g. Datafac to MyOrgName
 3. Globally rename "Template" to your new package name in *all* files.
    - e.g. Template.sln to MyPackage
-4. Rename MyClass.cs to match your first class name.
+4. Rename MyClass1.cs to match your first class name.
 5. Rename MyClassTests.cs to match your first test class name.
 6. Update version.json and readme.md
 7. Generate and update SigningKey.snk
