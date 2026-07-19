@@ -9,6 +9,12 @@ namespace DataFac.Template.Tests
     public class PublicApiRegressionTests
     {
         [Fact]
+        public async Task CheckVerifySetup()
+        {
+            await VerifyChecks.Run();
+        }
+
+        [Fact]
         public void VersionCheck()
         {
             typeof(MyClass1).Assembly.GetName().Version?.ToString().ShouldBe("0.3.0.0");
