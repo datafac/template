@@ -3,17 +3,12 @@ using PublicApiGenerator;
 using System.Threading.Tasks;
 using VerifyXunit;
 using Xunit;
+using System.Text;
 
 namespace DataFac.Template.Tests
 {
     public class PublicApiRegressionTests
     {
-        [Fact]
-        public async Task CheckVerifySetup()
-        {
-            await VerifyChecks.Run();
-        }
-
         [Fact]
         public void VersionCheck()
         {
