@@ -32,10 +32,13 @@ and publishes to NuGet.
 6. Update version.json and readme.md
 7. Generate and update SigningKey.snk
 8. Update the license properties in the .csproj file.
-9. Make sure your Nuget API key is not expired and is
+9. If you will write tests uning Verify, enter your Verify license
+   details in the test project. If not, remove the package reference
+   to Verify.
+10. Make sure your Nuget API key is not expired and is
    saved as a Github secret named NUGET_APIKEY in your
    GitHub organisation or repository.
-10. Build, test, commit and push!
+11. Build, test, commit, re-test release in mode and push!
 
 ## Coming soon
 - Sample Benchmarking project using BenchmarkDotNet.
