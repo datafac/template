@@ -18,7 +18,7 @@ and publishes to NuGet.
 - build status and other badges
 - package targets netstandard2.0, net8.0, net10.0
 - includes publishing symbols (snupkg)
-- XUnit test project using Shoudly, VerifyXUnit and PublicApiGenerator
+- XUnitV3 test project using Shoudly, VerifyXUnit and PublicApiGenerator
 - unit tests target net481, net8.0, net10.0
 
 ## How to use
