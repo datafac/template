@@ -1,5 +1,8 @@
 
 # Datafac.Template
+
+Version 0.3.x
+
 A template repo for quickly creating a C# .NET package which builds on GitHub 
 and publishes to NuGet.
 
