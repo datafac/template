@@ -16,7 +16,7 @@ jobs:
     permissions:
       id-token: write  # enable GitHub OIDC token issuance for this job
 
-    runs-on: ubuntu-latest # note: use windows-latest if you want to build .NET Framework projects
+    runs-on: windows-latest # note: use windows-latest if you want to build .NET Framework projects
 
     steps:
 
