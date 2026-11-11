@@ -13,7 +13,7 @@
 
 	<PropertyGroup>
 		<Verify_SponsorshipExemption>OpenSource</Verify_SponsorshipExemption>
-		<Verify_SponsorshipExemptionUntil>2027-09</Verify_SponsorshipExemptionUntil>
+		<Verify_SponsorshipExemptionUntil>2027-11</Verify_SponsorshipExemptionUntil>
 	</PropertyGroup>
 
 	<ItemGroup>
