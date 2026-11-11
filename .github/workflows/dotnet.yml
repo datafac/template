@@ -29,10 +29,10 @@ jobs:
       run: |
         sudo apt-get update && sudo apt-get install -y mono-complete
 
-    - name: Setup .NET 10
+    - name: Setup .NET 11
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: 10.x
+        dotnet-version: 11.x
 
     - name: Restore dependencies
       run: dotnet restore
