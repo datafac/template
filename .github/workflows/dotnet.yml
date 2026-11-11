@@ -16,7 +16,9 @@ jobs:
     permissions:
       id-token: write  # enable GitHub OIDC token issuance for this job
 
-    runs-on: windows-latest # note: use windows-latest if you want to build .NET Framework projects
+    # we are running the builds and tests on Windows because we might want to build and test .NET Framework projects
+    # if no .NET Framework projects are present, you can change this to ubuntu-latest to save some time and resources
+    runs-on: windows-latest
 
     steps:
 
@@ -24,10 +26,6 @@ jobs:
       uses: actions/checkout@v4
       with:  
         fetch-depth: 0
-
-    # - name: Install Mono
-    #   run: |
-    #     sudo apt-get update && sudo apt-get install -y mono-complete
 
     - name: Setup .NET 11
       uses: actions/setup-dotnet@v4
