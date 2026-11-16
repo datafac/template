@@ -1,10 +1,8 @@
 
 # Datafac.Template
 
-Version 0.3.x
-
 A template repo for quickly creating a C# .NET package which builds on GitHub 
-and publishes to NuGet.
+and publish to NuGet.
 
 [![Build-Deploy](https://github.com/datafac/template/actions/workflows/dotnet.yml/badge.svg)](https://github.com/datafac/template/actions/workflows/dotnet.yml)
 ![NuGet Version](https://img.shields.io/nuget/v/Datafac.Template)
@@ -22,25 +20,25 @@ and publishes to NuGet.
 - package targets netstandard2.0, net8.0, net10.0
 - includes publishing symbols (snupkg)
 - XUnitV3 test project using Shoudly, VerifyXUnit and PublicApiGenerator
-- unit tests target net481, net8.0, net10.0
+- unit tests target net481, net10.0, net11.0
 
 ## How to use
 1. Create a new repo by importing this repo.
-2. Globally rename "DataFac" to your organisation name in *all* files.
+2. Globally rename "DataFac" to your organisation name in *all* files and folders.
    - e.g. Datafac to MyOrgName
-3. Globally rename "Template" to your new package name in *all* files.
-   - e.g. Template.sln to MyPackage
+3. Globally rename "Template" to your new package name in *all* files and folders.
+   - e.g. Template to MyPackage
 4. Rename MyClass1.cs to match your first class name.
 5. Rename MyClassTests.cs to match your first test class name.
-6. Update version.json and readme.md
+6. Update version.json and this readme.md
 7. Generate and update SigningKey.snk
 8. Update the license properties in the .csproj file.
 9. If you will write tests uning Verify, enter your Verify license
    details in the test project. If not, remove the package reference
    to Verify.
-10. Make sure your Nuget API key is not expired and is
-   saved as a Github secret named NUGET_APIKEY in your
-   GitHub organisation or repository.
+10. Login to your NuGet account, and make sure Trusted Publishing is set up
+	for the repository in which this package will be published from. This is 
+	required for publishing from GitHub Actions.
 11. Build, test, commit, re-test release in mode and push!
 
 ## Coming soon
